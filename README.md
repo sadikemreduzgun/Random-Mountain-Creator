@@ -8,7 +8,11 @@ Upcoming full version of Random-Topographic-Structure Creator: https://github.co
 ![mountcont1](https://user-images.githubusercontent.com/70113249/221588584-8604757e-2a77-412e-b771-14f3619a6b1f.jpg)
 
 ## Or another random structure
-![mount2](https://user-images.githubusercontent.com/70113249/221588591-f845b87f-d9d4-47b4-8e56-e3dd1fc8289d.jpg)
+![mount3](https://user-images.githubusercontent.com/70113249/221591755-47ae126b-d22f-488f-a55c-16d45c7856f3.jpg)
+
+## Or another
+![mounr4](https://user-images.githubusercontent.com/70113249/221592013-57f30bfc-efd5-4a4c-ae9a-13b467065588.jpg)
+
 
 ### Uses the main logic behind older topographic structure generator: https://github.com/sadikemreduzgun/Random-Topographic-Structure-Creator-Demo-
 
