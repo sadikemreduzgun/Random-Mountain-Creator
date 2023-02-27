@@ -2,7 +2,6 @@ import random as rd
 from create_mountain import mountain_rising
 import numpy as np
 import pandas as pd
-from create_flat import flat
 import plotly.graph_objects as go
 from create_area import create_area
 from create_hills import hill_type_1
@@ -10,7 +9,7 @@ from create_hills import hill_type_1
 
 size = 50
 area = np.zeros((size, size))
-area = flat(area, size)
+
 #print(area)
 area = mountain_rising(area, size)
 
