@@ -1,5 +1,5 @@
 # Random-Mountain-Creator
-Upcoming full version of Random-Topographic-Structure Creator
+Upcoming full version of Random-Topographic-Structure Creator: https://github.com/sadikemreduzgun/Random-Topographic-Structure-Creator-Demo-
 
 ## Creates random Structures like:
 ![mount1](https://user-images.githubusercontent.com/70113249/221588555-edae705b-8223-4ea6-a3d1-5dfa0fe90ff2.jpg)
@@ -9,3 +9,7 @@ Upcoming full version of Random-Topographic-Structure Creator
 
 ## Or another random structure
 ![mount2](https://user-images.githubusercontent.com/70113249/221588591-f845b87f-d9d4-47b4-8e56-e3dd1fc8289d.jpg)
+
+### Uses the main logic behind older topographic structure generator: https://github.com/sadikemreduzgun/Random-Topographic-Structure-Creator-Demo-
+
+Logic is mentioned there.
