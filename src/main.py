@@ -9,11 +9,11 @@ from create_hills import hill_type_1
 
 size = 50
 area = np.zeros((size, size))
-
+chaos_const = 120
 #print(area)
 area = mountain_rising(area, size)
 
-for i in range(0,200):
+for i in range(0,chaos_const):
     x, y = rd.randint(0, 40), rd.randint(0, 40)
     area = hill_type_1(area, x, y)
 
