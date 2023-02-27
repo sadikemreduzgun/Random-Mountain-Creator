@@ -113,4 +113,3 @@ def hill_type_1(area,locx=random_locate()[0], locy=random_locate()[1]):
 def hill_type_2(area):
 
     pass
-  
