@@ -1,5 +1,5 @@
 import random as rd
-from create_flat import flat
+
 
 def random_locate(old_locs=None):
 
