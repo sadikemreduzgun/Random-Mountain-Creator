@@ -1,3 +1,4 @@
+# import packages
 import random as rd
 from create_mountain import mountain_rising
 import numpy as np
@@ -6,21 +7,25 @@ import plotly.graph_objects as go
 from create_area import create_area
 from create_hills import hill_type_1
 
-
+# define size of area
 size = 50
+# define area using numpy array
 area = np.zeros((size, size))
+# a constant to determine how mounty the structure is probabyly to altitude too
 chaos_const = 120
 #print(area)
+# get main big mountain
 area = mountain_rising(area, size)
 
+# get small hills or small mountains around it. Adjusted by "chaos_const"
 for i in range(0,chaos_const):
     x, y = rd.randint(0, 40), rd.randint(0, 40)
     area = hill_type_1(area, x, y)
 
-
+# Load mountain into a dataframe
 df = pd.DataFrame(area)
-print(df)
 
+# define a dictionary for plotyly usage
 my_z_dict = {}
 
 z = area
@@ -31,16 +36,14 @@ for lines in z:
     my_z_dict.update({elements: z[elements - 1]})
     elements += 1
 
-# if you want to see defined dictionary:
-# print(my_z_dict)
-
 # loading data into a DataFrame object
 loaded_z_DataFrame = pd.DataFrame(my_z_dict)
 
 # to use modules
 fig = go.Figure()
 
-"""you can change its color by just write a color scale on of following:
+"""
+             you can change its color by just write a color scale on of following:
              'aggrnyl', 'agsunset', 'algae', 'amp', 'armyrose', 'balance',
              'blackbody', 'bluered', 'blues', 'blugrn', 'bluyl', 'brbg',
              'brwnyl', 'bugn', 'bupu', 'burg', 'burgyl', 'cividis', 'curl',
@@ -56,9 +59,10 @@ fig = go.Figure()
              'tealrose', 'tempo', 'temps', 'thermal', 'tropic', 'turbid',
              'turbo', 'twilight', 'viridis', 'ylgn', 'ylgnbu', 'ylorbr',
              'ylorrd'
-             like colorscale='speed' below:"""
+             like colorscale='speed' below:
+"""
 
-# using some modules
+# using some modules, you can change "colorscale='sth'" as denoted above
 fig.add_trace(go.Surface(z=loaded_z_DataFrame.values,
                          colorscale='delta'))
 # updating plot sizing
@@ -101,4 +105,5 @@ fig.update_layout(
     ]
 )
 
+# display the structure on a 3D plot
 fig.show()
