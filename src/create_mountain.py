@@ -130,17 +130,17 @@ def mountain_rising(area, size, locx=random_locate()[0], locy=random_locate()[1]
 # Defined upcoming characters of mountains 
 # rise and descend mountain
 def mountain_balanced():
-
+    # coming soon
     pass
 
 
 # üstünde çukurlu dağ
 def mountain_with_pit(area):
-
+    # coming soon
     pass
 
 
 def mountain_mess(area):
-
+    # coming soon
     pass
 
